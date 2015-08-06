@@ -21,9 +21,10 @@ Or install it yourself as:
 
 ## Usage
 
-1. Set file_path for ParamsBuilder.
+1 Set file_path for ParamsBuilder.
 
 If you are using Rails, by default ParamsBuilder will set file_path with 
+
 `"#{Rails.root}/spec/params_builders"`.
 
 
@@ -35,9 +36,9 @@ If you are using Rails, by default ParamsBuilder will set file_path with
 
 ```
 
-2. Touch a new file like `company_params.yml.erb` in specify folder.
+2 Touch a new file like `company_params.yml.erb` in specify folder.
 
-```ruby
+```yaml
 
   name: <%= company.name %>
   logo: <%= company.logo %>
@@ -48,7 +49,7 @@ If you are using Rails, by default ParamsBuilder will set file_path with
 
 ```
 
-3. Get params from this file.
+3 Get params from this file.
 
 ```ruby
   class Company
