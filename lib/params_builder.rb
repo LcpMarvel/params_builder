@@ -22,4 +22,12 @@ module ParamsBuilder
       )
     ).first
   end
+
+  def self.read(file_name)
+    path = "#{config.file_path}/#{file_name}.yml.erb"
+
+    YAML.load_stream(
+      ERB.new(File.read(path)).result
+    ).first
+  end
 end
